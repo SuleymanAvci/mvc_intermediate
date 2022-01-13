@@ -1,0 +1,28 @@
+﻿@using mvc_intermediate.Models;
+@model UrunCategoryModel
+@{
+    ViewBag.Title = "Index";
+
+}
+
+
+<h2>Urunler</h2>
+<hr />    
+<div>ürün sayılari : @Model.UrunSayisi</div>
+
+
+  
+        <ul>
+            @foreach (var item in Model.Urunler)
+            {
+                if (item.Satistami = true)
+                {
+                    <li>
+                        @item.UrunAdi
+                    </li>
+                }
+
+
+            }
+        </ul>
+

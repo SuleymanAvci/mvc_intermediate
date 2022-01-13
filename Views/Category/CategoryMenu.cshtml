@@ -1,0 +1,10 @@
+﻿@using mvc_intermediate.Models;
+@model List<Category>
+
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.CategoryAdi
+    </div>
+}
